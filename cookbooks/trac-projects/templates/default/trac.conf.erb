@@ -1,0 +1,8 @@
+# The Location is the part after the host (http://example.com<Location>) that
+# you want to serve the Trac site
+<% trac_project_home_path = node.default.trac.project_home -%>
+
+<% node.default.trac.project.each do |project| -%>
+<%  project_id = project[1].id -%>
+<%= render 'site-template.erb', :variables => { :project_id => project_id } %>
+<% end -%>

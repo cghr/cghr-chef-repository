@@ -1,0 +1,13 @@
+<Location /trac/<%= @project_id %>>
+   SetHandler mod_python
+   PythonHandler trac.web.modpython_frontend
+   # "/var/www/svn/foobar" is the folder you gave to trac-admin initenv earlier
+   PythonOption TracEnv /var/www/trac/<%= @project_id %>
+   # "/trac" is the same as the Location above
+   PythonOption TracUriRoot /trac/<%= @project_id %>
+   # "/tmp" should be some writable temporary directory
+   SetEnv PYTHON_EGG_CACHE /tmp
+   # "trac" can be any string, but must be the same for all
+   # Trac instances on the same Apache install
+   PythonInterpreter trac
+</Location>
