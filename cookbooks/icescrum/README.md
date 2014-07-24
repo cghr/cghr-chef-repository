@@ -1,5 +1,5 @@
-cghr-server Cookbook
-====================
+icescrum Cookbook
+=================
 TODO: Enter the cookbook description here.
 
 e.g.
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - cghr-server needs toaster to brown your bagel.
+- `toaster` - icescrum needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
-#### cghr-server::default
+#### icescrum::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['cghr-server']['bacon']</tt></td>
+    <td><tt>['icescrum']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### cghr-server::default
+#### icescrum::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `cghr-server` in your node's `run_list`:
+Just include `icescrum` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[cghr-server]"
+    "recipe[icescrum]"
   ]
 }
 ```

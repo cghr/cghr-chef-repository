@@ -1,5 +1,5 @@
-cghr-server Cookbook
-====================
+trac-project-barshi-dashboard Cookbook
+======================================
 TODO: Enter the cookbook description here.
 
 e.g.
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - cghr-server needs toaster to brown your bagel.
+- `toaster` - trac-project-barshi-dashboard needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
-#### cghr-server::default
+#### trac-project-barshi-dashboard::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['cghr-server']['bacon']</tt></td>
+    <td><tt>['trac-project-barshi-dashboard']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### cghr-server::default
+#### trac-project-barshi-dashboard::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `cghr-server` in your node's `run_list`:
+Just include `trac-project-barshi-dashboard` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[cghr-server]"
+    "recipe[trac-project-barshi-dashboard]"
   ]
 }
 ```

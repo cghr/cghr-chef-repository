@@ -2,11 +2,7 @@ package 'trac10'
 package 'graphviz'
 package 'python'
 
-remote_directory '/etc/trac/plugins.d' do
-  recursive true
-  action :delete
-  only_if { ::File.exists?('/etc/trac/plugins.d') }
-end
+include_recipe 'cghr-server::apache-install'
 
 remote_directory '/etc/trac' do
   files_owner 'root'
@@ -16,6 +12,7 @@ remote_directory '/etc/trac' do
   group 'root'
   mode '0755'
   source 'conf'
+  purge true
   notifies :restart, 'service[httpd]', :delayed
 end
 
